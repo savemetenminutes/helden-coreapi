@@ -1,0 +1,41 @@
+{
+  "name": "helden/coreapi",
+  "description": "The Helden CoreAPI",
+  "type": "library",
+  "keywords": [
+  ],
+  "homepage": "",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "helden",
+      "email": "admin@helden.de"
+    }
+  ],
+  "require": {
+    "php": "^7.3.0",
+  },
+  "autoload": {
+    "psr-4": {
+      "Helden\\Coreapi\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "vendor-dir": "../../"
+  },
+  "extra": {
+    "zf": {
+      "config-provider": [
+        "Helden\\Coreapi\\ConfigProvider"
+      ],
+      "aliases": {
+
+      }
+    }
+  }
+}
